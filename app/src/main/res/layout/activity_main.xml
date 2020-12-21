@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+    
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+
+        <FrameLayout
+            android:id="@+id/gameWindow"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@drawable/ic_launcher_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scoreField"
+                />
+
+
+            <ImageView
+                android:id="@+id/playerBody"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <ImageView
+                android:id="@+id/playerTail"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <ImageView
+                android:id="@+id/playerHead"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <ImageView
+                android:id="@+id/appleObject"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/applev2" />
+
+        </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_dark"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/upButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UP"/>
+
+        <Button
+            android:id="@+id/leftButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LEFT" />
+
+        <Button
+            android:id="@+id/rightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text= "RIGHT" />
+
+        <Button
+            android:id="@+id/downButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOWN" />
+
+    </LinearLayout>
+
+</LinearLayout>
